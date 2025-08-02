@@ -1,4 +1,3 @@
-import requests
 import streamlit as st
 from main import get_weather_data
 
@@ -10,5 +9,3 @@ if st.button("Check Weather"):
         weather_data = get_weather_data(city_name)
         st.text(weather_data)
     else:
-        st.warning("Please check the city name.")
-
