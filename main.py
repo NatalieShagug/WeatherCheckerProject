@@ -1,6 +1,7 @@
 import requests
+import streamlit as st
 
-API_KEY = "Your_API_KEY"
+API_KEY = st.secrets["API_KEY"]
 url = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather_data(city_name) :
